@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Sound effects and Sequencing</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./css/theme/sky.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template">
+
+
+## Audio project 4
+### Sound with visuals
+
+[link](https://moodle3.lsu.edu/mod/assign/view.php?id=1362971)
+</script></section><section  data-markdown><script type="text/template">
+* See [HackPact](https://github.com/stc/HackPact) for inspiration
+</script></section><section  data-markdown><script type="text/template">
+## Bubbles with sound
+
+<iframe height="490" style="width: 100%;" scrolling="no" title="Bubbles with sound!" src="//codepen.io/lsuddem/embed/rROVea/?height=490&theme-id=35490&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/rROVea/'>Bubbles with sound!</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+</script></section><section  data-markdown><script type="text/template">
+[Sequencing/timing examples](https://tonejs.github.io/examples/stepSequencer.html)
+</script></section><section  data-markdown><script type="text/template">## Sequencing notes
+
+* [Tone.Transport](https://github.com/Tonejs/Tone.js/wiki/Transport)
+  * start
+  * stop
+  * toggle
+    * go between start and stop
+  * seconds
+    * get current position in seconds
+  * position
+    * get beats:bars:sixteens
+  * bpm
+    *  beats per minute
+</script></section><section  data-markdown><script type="text/template">
+  * schedule
+  * scheduleRepeat
+
+<iframe height="490" style="width: 100%;" scrolling="no" title="Tone.Transport - schedule and scheduleRepeat" src="//codepen.io/lsuddem/embed/EMxjzd/?height=265&theme-id=0&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/EMxjzd/'>Tone.Transport - schedule and scheduleRepeat</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+  </script></section><section  data-markdown><script type="text/template">
+# higher level sequencers
+
+[overview](https://github.com/Tonejs/Tone.js/wiki/Events)</script></section><section  data-markdown><script type="text/template">  
+## Event
+* abstracts away Tone.Transport.schedule and provides a schedulable callback for a single or repeatable events along the timeline
+* loop
+  * true or false
+* loopEnd
+* loopStart
+* mute
+  * won't fire if mute is true
+</script></section><section  data-markdown><script type="text/template">
+* playbackRate
+  * interval if looped
+* probability
+  * add randomness to note triggered probability
+* progress
+  * where are we in the loop?
+</script></section><section  data-markdown><script type="text/template">
+<iframe height="490" style="width: 100%;" scrolling="no" title="Tone.Transport - Event" src="//codepen.io/lsuddem/embed/bZGwaz/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/bZGwaz/'>Tone.Transport - Event</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+[starter](https://codepen.io/lsuddem/pres/LaVvpw?editors=0011)
+</script></section><section  data-markdown><script type="text/template">## Rain on a tin roof
+
+<iframe height="490" style="width: 100%;" scrolling="no" title="Rain on a tin roof " src="//codepen.io/lsuddem/embed/ZPYdLa/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/ZPYdLa/'>Rain on a tin roof </a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter](https://codepen.io/lsuddem/pres/wOaOxW?editors=1010)
+</script></section><section  data-markdown><script type="text/template">
+## Part
+
+*  collection Tone.Events which can be started/stopped and looped as a single unit.
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Tone.Transport - Part" src="//codepen.io/lsuddem/embed/aMbBPa/?height=351&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/aMbBPa/'>Tone.Transport - Part</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter](https://codepen.io/lsuddem/pres/qvdwae)</script></section><section  data-markdown><script type="text/template">
+## Sequence
+
+* alternate notation of a part
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Tone.Transport - Sequence" src="//codepen.io/lsuddem/embed/YgXMYW/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/YgXMYW/'>Tone.Transport - Sequence</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter](https://codepen.io/lsuddem/pres/bZdJZK)</script></section><section  data-markdown><script type="text/template">## Loop
+
+* an event that loops by default
+* notes can not be passed in like event though
+* it's good for looping things that aren't note based
+* lets redo out rain example with Loop
+  </script></section><section  data-markdown><script type="text/template">
+# Rain loop
+
+<iframe height="400" style="width: 100%;" scrolling="no" title="Tone.loop with Rain on a tin roof " src="//codepen.io/lsuddem/embed/VRLOwb/?height=317&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/VRLOwb/'>Tone.loop with Rain on a tin roof </a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter](https://codepen.io/lsuddem/pres/VRLOQy?editors=0010)
+</script></section><section  data-markdown><script type="text/template">
+## Pattern
+
+* play through note arrays like sequence or part
+* arpeggiate based on Tone.CtrlPattern type
+* see: [docs](https://tonejs.github.io/docs/r13/CtrlPattern)
+* CtrlPattern types
+  * up, down, upDown, downUp, alternateUp, alternateDown, random, randomWalk
+</script></section><section  data-markdown><script type="text/template">
+<iframe height="490" style="width: 100%;" scrolling="no" title="Tone.Transport - Pattern" src="//codepen.io/lsuddem/embed/NJGPyy/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/NJGPyy/'>Tone.Transport - Pattern</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+</script></section><section  data-markdown><script type="text/template">
+## Sound Effect
+</script></section><section  data-markdown><script type="text/template">
+## Massive impact
+
+<iframe height="490" style="width: 100%;" scrolling="no" title="Massive Impact" src="//codepen.io/lsuddem/embed/moyYbx/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/moyYbx/'>Massive Impact</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter](https://codepen.io/lsuddem/pres/eXNXMy?editors=0010)
+
+</script></section><section  data-markdown><script type="text/template">
+## Sirens
+
+<iframe height="490" style="width: 100%;" scrolling="no" title="Sirens" src="//codepen.io/lsuddem/embed/oVXyaE/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/oVXyaE/'>Sirens</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter](https://codepen.io/lsuddem/pres/jJPJoL?editors=0010)
+</script></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {};
+            options = extend(defaultOptions, options, queryOptions);
+        </script>
+
+
+        <script>
+          Reveal.initialize(options);
+        </script>
+    </body>
+</html>

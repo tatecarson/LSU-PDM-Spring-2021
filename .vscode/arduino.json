@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "/dev/cu.usbmodem142441",
+    "sketch": "Hardware_Week_2_Th/1_DigitalReadSerial_START/DigitalReadSerial.ino"
+}
