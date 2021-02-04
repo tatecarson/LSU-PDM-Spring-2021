@@ -21,7 +21,7 @@ Refer to [WEBAUDIO BASICS & SOUND FILE PLAYERS](https://pdm.lsupathways.org/3_au
 
 ## Starter files 
 
-Use [this](0_p5-tone-starter) to start new projects. 
+Use [this](starter-template) to start new projects. 
 
 ## Example 1:
 
@@ -39,14 +39,14 @@ Use [this](0_p5-tone-starter) to start new projects.
 * show playing one file
 * add button from p5.dom
 * also see:
-  * <https://tonejs.github.io/docs/r11/Sampler>
+  * <https://tonejs.github.io/docs/14.7.77/Sampler>
     * useful for making sampler instruments
-  * <https://tonejs.github.io/docs/r11/Players>
+  * <https://tonejs.github.io/docs/14.7.77/Players>
     * useful for grouping together like sounds
 
 ## example 2: add ability to play multiple files
 
-* [Multiple samples](3_TonePlayersMultisample_FINISHED/sketch.js)
+* [Multiple samples](https://codepen.io/lsuddem/pen/vrzEjR?editors=1011)
 * add multiple Tone.Player objects together
 * add buttons to play each file
 

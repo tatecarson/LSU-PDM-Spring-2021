@@ -4,23 +4,23 @@ theme: solarized
 ---
 
 # Project Setup
-
 ## Editor
 - [Visual Studio Code](https://code.visualstudio.com/), my choice
 - Others
   - Atom
   - Sublime
+  
 ---
 ## Local Server
+
 - [Download Node](https://nodejs.org/en/)
 - Choose from these servers
   * [lite-server](https://www.npmjs.com/package/lite-server)
   * [http-server](https://www.npmjs.com/package/http-server)
   * [browser-sync](https://www.browsersync.io/)
     * host folders with ```browser-sync start -s --directory -f ./ ```
-
+  * 
 ---
-
 # Assignment 1: Build a sampler 
 
 - [assignment](https://moodle3.lsu.edu/mod/assign/view.php?id=1362966)
@@ -42,7 +42,7 @@ theme: solarized
 ex:
 
 ```javascript
-var player = new Tone.Player().toMaster();
+var player = new Tone.Player().toDestination();
 ```
 
 ---
@@ -101,7 +101,7 @@ Since we have multiple sounds to play now we can use keys on the keyboard to tri
 
 store multiple samples in a Players object
 ```
-new Tone.Players({
+const sounds = new Tone.Players({
     name1: "url",
     name2: "url",
     name3: "url"
@@ -111,12 +111,12 @@ new Tone.Players({
 
 select sample
 ```
-players.get("name1")
+sounds.player.get("name1")
 ```
 
 play sample
 ```
-players.get("name1").start()
+sounds.player.get("name1").start()
 ```
 
 ---
