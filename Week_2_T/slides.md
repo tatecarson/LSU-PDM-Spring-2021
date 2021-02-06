@@ -59,7 +59,7 @@ theme: sky
 
 ### Oscillators
 
-The most basic unit of synthesis in tone is [Tone.Oscillator](https://tonejs.github.io/docs/r11/Oscillator). 
+The most basic unit of synthesis in tone is [Tone.Oscillator](https://tonejs.github.io/docs/14.7.77/Oscillator). 
 
 * Sine
 * Triangle
