@@ -21,11 +21,11 @@ theme: solarized
 
 ## Connect effect
 
-- Build our chosen audio effect, assign it to a variable, and connect its output to the master speakers (using the .toMaster( ) method)
+- Build our chosen audio effect, assign it to a variable, and connect its output to the speakers (using the .toDestination( ) method)
 - the effect needs to get created first before you can send a sound through it
 
 ```js
-var effect = new Tone.FeedbackDelay().toMaster();
+var effect = new Tone.FeedbackDelay().toDestination();
 ```
 
 - Build our sound source, assign it to a variable, and connect its output to our 
@@ -39,7 +39,7 @@ var multiplayer = new Tone.Players({...}).connect(effect);
 ## Changing effects parameters for signals
 
 example:
-[FeedBack Delay Docs](https://tonejs.github.io/docs/r13/FeedbackDelay)
+[FeedBack Delay Docs](https://tonejs.github.io/docs/14.7.77/FeedbackDelay)
 
 - signals have the (~) by them in the docs
 - allows audio rate (44,100 Hz)control over attribute
@@ -73,8 +73,8 @@ see [signal wiki](https://github.com/Tonejs/Tone.js/wiki/Signals#setting-values)
 - many echos bouncing off the walls, think the sound clapping in a cathedral or cave
 - all spaces produce reverb
 - Tone's two types: 
-  - [`JCReverb`](https://tonejs.github.io/docs/13.8.25/JCReverb) - a simple Schroeder Reverberator tuned by John Chowning in 1970 - cheap but artificial sounding
-  - [`Reverb`](https://tonejs.github.io/docs/13.8.25/Reverb) - convolution, more expensive than the JCReverb but more natural
+  - [`JCReverb`](https://tonejs.github.io/docs/14.7.77/JCReverb) - a simple Schroeder Reverberator tuned by John Chowning in 1970 - cheap but artificial sounding
+  - [`Reverb`](https://tonejs.github.io/docs/14.7.77/Reverb) - convolution, more expensive than the JCReverb but more natural
 
 ---
 
