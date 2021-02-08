@@ -3,7 +3,7 @@
 Examples for Programming Digital Media class at Louisiana State University, Spring 2020
 
 - email: <tcarso2@lsu.edu>   
-- Office hours: 1pm to 3pm Monday in the Digital Media Center (2006)
+- Office hours: 1pm to 3pm Monday on [zoom](https://lsu.zoom.us/j/9356980659)
 - Zoom
   - We will be using zoom to meet during our normal class time 
   - Please email to schedule a personal meeting if you need it
