@@ -9,6 +9,7 @@ theme: solarized
 - Others
   - Atom
   - Sublime
+- [p5 editor](https://editor.p5.js)
   
 ---
 ## Local Server
@@ -19,14 +20,13 @@ theme: solarized
   * [http-server](https://www.npmjs.com/package/http-server)
   * [browser-sync](https://www.browsersync.io/)
     * host folders with ```browser-sync start -s --directory -f ./ ```
-  * 
+  
 ---
 # Assignment 1: Build a sampler 
 
-- [assignment](https://moodle3.lsu.edu/mod/assign/view.php?id=1362966)
+- [assignment](https://moodle.lsu.edu/mod/assign/view.php?id=437231)
 - Project starter
-  - [view](/starter-template/)
-  - [download](/starter-template.zip)
+  - [p5 editor](https://editor.p5js.org/tcarso2/sketches/3Gs60W1g_)
   
 
 ---
@@ -49,7 +49,7 @@ var player = new Tone.Player().toDestination();
 
 ## Creating a Sound File Player
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="PDM Sound: Sample Playback" src="//codepen.io/lsuddem/embed/MXVgVR/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="PDM Sound: Sample Playback" src="//codepen.io/lsuddem/embed/MXVgVR/?height=300&theme-id=35490&default-tab=result" data-preview="true" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/MXVgVR/'>PDM Sound: Sample Playback</a> by LSU DDEM
   (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -151,7 +151,7 @@ Alternatives to **keyIsDown**?
   * **button1.mousePressed()**
 
 ex:
-```
+```js
 button1 = createButton("button label");
 button1.position(x, y);
 button1.mousePressed()
@@ -221,4 +221,4 @@ text(str,x,y);
 
 ---
 
-### Start on your assignments now. We'll add effects to them on Tuesday. 
+### Start on your assignments now. We'll add effects to them on Thursday. 
