@@ -6,7 +6,13 @@ theme: sky
 
 # Assignment 2
 
-[Basic Sound Synthesis](https://moodle3.lsu.edu/mod/assign/view.php?id=988729)
+[Basic Sound Synthesis](https://moodle.lsu.edu/course/view.php?id=8671#section-6)
+
+---
+
+# Amplitude, Pitch etc
+
+[Learning Synths](https://learningsynths.ableton.com/en/get-started)
 
 ---
 
@@ -73,6 +79,7 @@ The most basic unit of synthesis in tone is [Tone.Oscillator](https://tonejs.git
 ## Enevelopes 
 
 - [Tone example](https://tonejs.github.io/examples/envelope.html)
+- [Learning Synths - Envelopes](https://learningsynths.ableton.com/en/envelopes/change-over-time)
 
 <!-- TODO: add in image of ADSR here!! -->
 <img src="adsr.png" width="70%">
@@ -92,6 +99,7 @@ The most basic unit of synthesis in tone is [Tone.Oscillator](https://tonejs.git
 ## Filters
 
 - A [filter](https://tonejs.github.io/docs/r11/Filter) modifies a source sound by either amplifying or attenuating certain frequency ranges of that sound.
+- [Learning Synths - Filters](https://learningsynths.ableton.com/en/filters/filters-in-the-real-world)
 
 ---
 
@@ -115,7 +123,7 @@ The most basic unit of synthesis in tone is [Tone.Oscillator](https://tonejs.git
 
 ### Noise
 
-- [Tone.Noise](https://tonejs.github.io/docs/r11/Noise) produces different colors of noise. 
+- [Tone.Noise](https://tonejs.github.io/docs/14.7.77/Noise) produces different colors of noise. 
 - Each has a different sound, covers a different frequency range,  and is used for different purposes. 
 - There are other colors of [noise](https://en.wikipedia.org/wiki/Colors_of_noise) that tone doesn't implement that are good to know about.  
 
