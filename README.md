@@ -9,8 +9,10 @@ Examples for Programming Digital Media class at Louisiana State University, Spri
   - Please email to schedule a personal meeting if you need it
 - Ask for help on the [Discord](https://discord.gg/rByvFeP)
   -  you can post a question about anything related to the class and one of your classmate or I will answer it. 
+-  Starter template 
+   - [download](https://downgit.github.io/#/home?url=https://github.com/tatecarson/LSU-PDM-Spring-2021/tree/main/Week_1_T/starter-template) 
+   - [p5 editor](https://editor.p5js.org/tcarso2/sketches/3Gs60W1g_)
   
-
 ---
 
 ## Lectures
@@ -51,40 +53,6 @@ Video tutorials and notes
   * p5.js --> Arduino [[video](https://youtu.be/zxaIv6GVosU), [code](Hardware_Week_3_T/writeExample)] 
   * Heart game [[video](https://youtu.be/GpBJrg_8Qgs)]  
   * Paint game with Arduino [[video](https://youtu.be/9-AXZToU-BM)]
-
-## Resources
-
-- Starter templates
-  - [download](https://github.com/tatecarson/tonejs-p5j-starter-template) - shows a basic example project with Tone.js and p5 with a button and slider
-    - click the green button to download
-  - [p5 web editor](https://editor.p5js.org/tcarso2/sketches/MMvCDJ0C) - if you still can't run a local server. After you're finished click on file -> download to get the zip to turn in your project. 
-    - warning: there may be a file size limit, try to use smaller and shorter samples 
-
-### Context not starting? 
-
-Try: 
-```
-function startContext() {
-  console.log("Tone is: ", Tone.context.state)
-  document.body.addEventListener("click", () => {
-    Tone.context.resume();
-    console.log("Tone is: ", Tone.context.state);
-  });
-}
-
-startContext(); 
-```
-
-That has stopped working for some students, if it does try this instead: 
-```
-function mousePressed() {
-  if(Tone.context.state === 'suspended') {
-    Tone.context.resume();
-  }
-}
-```
-
-This if statement could go anywhere where the user can trigger it with an event. 
 
 ### Tone.js
 
