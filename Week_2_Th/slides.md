@@ -13,16 +13,6 @@ theme: sky
 * [project 2](https://lsu-pdm-2020.netlify.com/week_2_th/project-examples/project-2/)
 * [project 3](https://lsu-pdm-2020.netlify.com/week_2_th/project-examples/project-3/)
 * [project 4](https://lsu-pdm-2020.netlify.com/week_2_th/project-examples/project-4/)
----
-
-## LFO (Low Frequency Oscillator)
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="PDM Sound - LFO" src="//codepen.io/lsuddem/embed/JxxbMy/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/lsuddem/pen/JxxbMy/'>PDM Sound - LFO</a> by LSU DDEM
-  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-[starter](https://codepen.io/lsuddem/pen/QYYGmL)
 
 ---
 
@@ -44,7 +34,6 @@ oscillator.frequency.value = 100; //sets the value immediately
 ## Scheduling Values
 
 - these are used to create [Envelopes](https://github.com/Tonejs/Tone.js/blob/e68fe68e4c4fef5b6eb3771491e9362c5b93579c/Tone/component/envelope/Envelope.ts#L355) in tone, but we can use them on their own
-- See documentation in the [Param](https://tonejs.github.io/docs/13.8.25/Param) section of the docs 
 
 ---
 
@@ -106,7 +95,7 @@ Tone.Transport.bpm.rampTo(120, 10)
 
 ## scheduling examples
 
-- see [signal](https://tonejs.github.io/docs/r13/Signal) for specifics
+- see [signal](https://tonejs.github.io/docs/14.7.77/Signal) for specifics
   
 <iframe height="400" style="width: 100%;" scrolling="no" title="PDM Sound - Scheduling Demo" src="//codepen.io/lsuddem/embed/yZrROR/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/lsuddem/pen/yZrROR/'>PDM Sound - Scheduling Demo</a> by LSU DDEM
@@ -117,7 +106,21 @@ Tone.Transport.bpm.rampTo(120, 10)
 
 ---
 
-# More LFOs
+## LFO - Low Frequency Oscillator 
+
+### [Learning Synths](https://learningsynths.ableton.com/en/lfos/change-that-repeats)
+
+---
+
+## LFO (Low Frequency Oscillator)
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="PDM Sound - LFO" src="//codepen.io/lsuddem/embed/JxxbMy/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/JxxbMy/'>PDM Sound - LFO</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+[starter](https://codepen.io/lsuddem/pen/QYYGmL)
+
 
 ---
 
@@ -132,17 +135,6 @@ Tone.Transport.bpm.rampTo(120, 10)
 [examples](https://tonejs.github.io/examples/lfoEffects.html)
 
 ---
-<!-- 
-## Tremolo and Vibrato
-
-<iframe height="300" style="width: 100%;" scrolling="no" title="PDM Sound - Tremolo remake" src="//codepen.io/lsuddem/embed/VgNOVb/?height=300&theme-id=35490&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/lsuddem/pen/VgNOVb/'>PDM Sound - Tremolo remake</a> by LSU DDEM
-  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-[starter](https://codepen.io/lsuddem/pen/ErzRmz) -->
-
-<!-- --- -->
 
 ## Autofilter and Autopan
 
@@ -152,6 +144,3 @@ Tone.Transport.bpm.rampTo(120, 10)
 </iframe>
 
 [starter](https://codepen.io/lsuddem/pen/ErzeKo?editors=1011)
-
----
-
