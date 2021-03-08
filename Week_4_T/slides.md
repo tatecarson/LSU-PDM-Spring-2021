@@ -63,22 +63,6 @@ const mariaPitches = ["Eb4", "A4", "Bb4", "Eb4", "A4", "Bb4", "C5", "A4", "Bb4",
 
 <iframe src="https://abbernie.github.io/tune/" width="100%" height="500px"></iframe>
 
----
-## Control Patterns
-
-- Tone.CtrlPattern
-  - used in Tone.Pattern
-  - run through an array of notes in a specific order
-- Tone.CtrlMarkov
-  - markov chain
-    - a sequence of possible events in which the probability of each event depends only on the state attained in the previous event
-  - can algorithmically switch between musical phrases 
-- Tone.CtrlRandom
-  - return a random number
-  - same as p5's random()
-- Tone.CtrlInterpolate
-  - interpolate between a list of numbers
-  - similar to p5's map()
 
 ---
 
@@ -91,21 +75,12 @@ const mariaPitches = ["Eb4", "A4", "Bb4", "Eb4", "A4", "Bb4", "C5", "A4", "Bb4",
 
 [starter](https://codepen.io/lsuddem/pen/PLWMWQ?editors=1011)
 
----
-
-## A more perfect union 
-
-[hub](https://ampu.site/hub.html)
-
-Visit [ampu.site](http://ampu.site)  on your smartphones to participate
-
-[source](https://github.com/tatecarson/a-more-pefect-union)
+note: only works with older version of tonejs
 
 ---
+<iframe height="300" style="width: 100%;" scrolling="no" title="Tone.js + Total Serialism - FINISHED" src="https://codepen.io/lsuddem/embed/xxRqKve?height=300&theme-id=37199&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/lsuddem/pen/xxRqKve'>Tone.js + Total Serialism - FINISHED</a> by LSU DDEM
+  (<a href='https://codepen.io/lsuddem'>@lsuddem</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
-
-## Mesh Garden 
-
-Visit [distseq.now.sh](http://distseq.now.sh) on your smartphones to participate
-
-[source](https://github.com/tatecarson/distributedSequencer)
+[starter](https://codepen.io/lsuddem/pen/OJbBvJq?editors=0010)
